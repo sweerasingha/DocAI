@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block title %}My Uploads{% endblock %}
+
+{% block styles %}
+<style>
+    .container {
+        max-width: 1200px;
+        margin: 50px auto ;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        height: 100vh;
+    }
+
+    .prediction-history-header {
+        color: #2c3e50;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .prediction-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .prediction-card {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        background: #ecf0f1;
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-container img {
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .prediction-details {
+        padding: 10px;
+        background: #fff;
+        flex: 1;
+    }
+
+    .prediction-date {
+        font-size: 0.9em;
+        color: #7f8c8d;
+    }
+
+    .prediction-text {
+        color: #34495e;
+        margin-top: 5px;
+    }
+
+    .no-predictions {
+        text-align: center;
+        color: #7f8c8d;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="prediction-history-header">Prediction History</h1>
+   
+    {% if predictions %}
+        <ul class="prediction-list">
+            {% for prediction in predictions %}
+                <li class="prediction-card">
+                    <div class="image-container">
+                        <img src="{{ url_for('skin_uploaded_file', filename=prediction['image_path']) }}" alt="Prediction Image">
+                    </div>
+                    <div class="prediction-details">
+                        <div class="prediction-date">Uploaded at: {{ prediction['uploaded_at'].strftime('%Y-%m-%d %H:%M:%S') }}</div>
+                        <div class="prediction-text">Prediction Details: {{ prediction['prediction_result'] }}</div>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p class="no-predictions">No predictions have been made yet.</p>
+    {% endif %}
+</div>
+{% endblock %}

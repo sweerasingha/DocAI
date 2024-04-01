@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block styles %}
+<style>
+    :root {
+        /* Define your color scheme here */
+        --text-color: #333;
+        --background-color: #f8f8f8;
+        --highlight-color: #ffa500; /* For the diagnosis banner text */
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: var(--text-color);
+        background-color: var(--background-color);
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Adjusted for vertical alignment */
+    align-items: center; /* Adjusted for horizontal alignment */
+    height: calc(100vh - 60px); /* Adjust this value based on your navbar's height */
+}
+
+.diagnosis-banner {
+    font-size: 26rem;
+    font-weight: bold;
+    color: transparent;
+    background: url('../static/images/home.png') no-repeat center center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    line-height: 1; /* Adjust the line height to ensure proper vertical alignment */
+    margin: auto; /* Center horizontally in the parent container */
+    display: block; /* Allows margin: auto to work for horizontal centering */
+}
+
+    h2 {
+        text-align: center;
+        color: var(--text-color);
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="diagnosis-banner">DocAI</h1>
+    <h2>Welcome to the Breast Cancer Diagnosis Management System</h2>
+</div>
+{% endblock %}

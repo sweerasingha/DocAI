@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+
+{% block title %}About{% endblock %}
+
+{% block styles %}
+<style>
+    :root {
+        --text-color: #333;
+        --background-color: #f8f8f8;
+        --primary-color: #0056b3; /* Primary color for your site */
+        --secondary-color: #ffa500; /* Secondary color for highlights */
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: var(--text-color);
+        background-color: var(--background-color);
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .about-section {
+        width: 100%;
+        padding: 40px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+    .about-section h2 {
+        color: var(--primary-color);
+        margin-bottom: 20px;
+    }
+
+    .about-section p {
+        text-align: justify;
+        margin-bottom: 20px;
+        line-height: 1.6;
+    }
+
+    .team-section {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .team-member {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-bottom: 20px;
+    }
+
+    .team-member img {
+        border-radius: 50%;
+        margin-right: 20px;
+        width: 150px; /* Adjust as needed */
+        height: auto;
+        box-shadow: #333;
+    }
+
+    .team-member div {
+        max-width: 800px;
+    }
+
+    .team-member h3 {
+        color: var(--secondary-color);
+        margin-bottom: 5px;
+    }
+
+    .team-member p {
+        text-align: left;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="about-section">
+        <h2>About the Project</h2>
+        <p>This project is dedicated to the prediction of breast cancer using advanced machine learning algorithms applied to ultrasound images. By employing meticulously trained models, our system provides reliable diagnostic support, aiming to aid in early detection and informed healthcare decisions.</p>
+    </div>
+    <div class="team-section">
+        <h2>The Creator</h2>
+        <div class="team-member">
+            <img src="{{ url_for('static', filename='images/me.png') }}" alt="Your Name">
+            <div>
+                <h3>Sachitha S Weerasingha</h3>
+                <p>As the sole developer of this project, I leveraged my expertise in machine learning and medical imaging to create a system that assists in the early diagnosis of breast cancer. My goal is to contribute to the healthcare field with technology that can save lives through early intervention.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,98 @@
+/* prediction.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+
+#imageUploadForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#skinImage {
+    margin-bottom: 20px;
+}
+
+#imagePreview {
+    display: block; /* Change from 'none' to 'block' */
+    margin: 20px 0; 
+    border: 3px solid #bdc3c7;
+    border-radius: 4px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    width: 100%; /* Take the full width of the parent */
+    margin-top: 20px; /* Optional: add some spacing on top */
+}
+
+.buttons button:hover {
+    background-color: #2980b9;
+}
+
+#predictionResults {
+    margin-top: 20px;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#predictionResults h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+#predictionText {
+    color: #34495e;
+}
+
+.alert {
+    padding: 10px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #2ecc71;
+    margin-bottom: 20px;
+}
