@@ -23,7 +23,7 @@ To set up DocoAI on your local machine, follow these steps:
 
 3. Install the required dependencies:
     ```sh
-    Install the required dependencies:
+    pip install -r requirements.txt
 
 4. Set up your MySQL database and update the app.config settings in the project to match your database configuration.
 
@@ -42,8 +42,8 @@ After starting the application, you can access it by navigating to http://127.0.
 
 ## Screenshots
 
-![image01](/screenshots/image01.png)
 ![image02](/screenshots/image02.png)
+![image01](/screenshots/image01.png)
 ![image03](/screenshots/image03.png)
 ![image04](/screenshots/image04.png)
 
