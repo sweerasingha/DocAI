@@ -7,8 +7,8 @@
     :root {
         --text-color: #333;
         --background-color: #f8f8f8;
-        --primary-color: #0056b3; /* Primary color for your site */
-        --secondary-color: #ffa500; /* Secondary color for highlights */
+        --primary-color: #007bff; /* A more professional shade of blue */
+        --secondary-color: #ffc107; /* A professional shade of amber for highlights */
     }
 
     body {
@@ -17,41 +17,42 @@
         background-color: var(--background-color);
         margin: 0;
         padding: 0;
+        font-size: 16px; /* Standard font size for readability */
     }
 
     .container {
-        max-width: 1200px;
+        max-width: 1280px; /* Slightly larger container */
         margin: auto;
-        padding: 20px;
+        padding: 40px; /* Increased padding for better spacing */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        min-height: 100vh; /* Ensure it takes minimum full height */
     }
 
     .about-section {
-        width: 100%;
-        padding: 40px;
+        width: 80%; /* Relative width for better responsiveness */
+        padding: 60px; /* Increased padding for more breathing room */
         background: #fff;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        margin-bottom: 20px;
+        border-radius: 10px; /* Slightly larger radius for modern look */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        margin-bottom: 40px; /* Increased margin for better separation */
     }
 
     .about-section h2 {
         color: var(--primary-color);
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     .about-section p {
         text-align: justify;
-        margin-bottom: 20px;
-        line-height: 1.6;
+        margin-bottom: 30px;
+        line-height: 1.8; /* Increased line height for better readability */
     }
 
     .team-section {
-        width: 100%;
+        width: 80%; /* Matching width with the about-section for consistency */
         margin-top: 40px;
     }
 
@@ -59,15 +60,15 @@
         display: flex;
         align-items: center;
         justify-content: start;
-        margin-bottom: 20px;
+        margin-bottom: 30px; /* Increased margin for better separation */
     }
 
     .team-member img {
         border-radius: 50%;
         margin-right: 20px;
-        width: 150px; /* Adjust as needed */
-        height: auto;
-        box-shadow: #333;
+        width: 120px; /* Adjust size for a more balanced look */
+        height: 120px; /* Keep height and width the same for circles */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     }
 
     .team-member div {
@@ -76,7 +77,7 @@
 
     .team-member h3 {
         color: var(--secondary-color);
-        margin-bottom: 5px;
+        margin-bottom: 10px; /* Adjusted spacing */
     }
 
     .team-member p {

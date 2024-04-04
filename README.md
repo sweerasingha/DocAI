@@ -1,6 +1,6 @@
-# DocoAI
+# DocAI
 
-DocoAI is a Flask-based web application designed for Breast Cancer Diagnosis Management. It allows users to upload ultrasound images of breast conditions for analysis, utilizing a deep learning model to predict whether the condition is benign, malignant, or normal. The application also supports patient registration, login, and contact functionalities to enhance user interaction and data management.
+DocAI is a Flask-based web application designed for Breast Cancer Diagnosis Management. It allows users to upload ultrasound images of breast conditions for analysis, utilizing a deep learning model to predict whether the condition is benign, malignant, or normal. The application also supports patient registration, login, and contact functionalities to enhance user interaction and data management.
 
 ## Features
 
@@ -11,7 +11,7 @@ DocoAI is a Flask-based web application designed for Breast Cancer Diagnosis Man
 
 ## Installation
 
-To set up DocoAI on your local machine, follow these steps:
+To set up DocAI on your local machine, follow these steps:
 
 1. Clone the repository to your local machine:
    ```sh
@@ -50,7 +50,7 @@ After starting the application, you can access it by navigating to http://127.0.
 
 ## Contributing
 
-We welcome contributions to DocoAI! If you have suggestions for improvements or bug fixes, please feel free to make a pull request or open an issue.
+We welcome contributions to DocAI! If you have suggestions for improvements or bug fixes, please feel free to make a pull request or open an issue.
 
 ## License
 
