@@ -15,7 +15,7 @@ To set up DocAI on your local machine, follow these steps:
 
 1. Clone the repository to your local machine:
    ```sh
-   git clone https://github.com/sweerasingha/DocoAI.git
+   git clone https://github.com/sweerasingha/DocAI.git
 
 2. Navigate to the project directory:
     ```sh
